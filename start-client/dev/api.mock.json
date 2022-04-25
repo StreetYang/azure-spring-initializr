@@ -1414,6 +1414,35 @@
           }
       ]
   },
+  "architecture": {
+      "type": "single-select",
+      "default": "none",
+      "values": [
+          {
+              "id": "none",
+              "name": "None",
+              "facets": []
+          },
+          {
+              "id": "mvc",
+              "name": "MVC",
+              "facets": [
+                  "web",
+                  "thymeleaf",
+                  "h2",
+                  "jpa"
+              ]
+          },
+          {
+              "id": "microservice",
+              "name": "Microservice",
+              "facets": [
+                  "web",
+                  "jpa"
+              ]
+          }
+      ]
+  },
   "packaging": {
     "type": "single-select",
     "default": "jar",
